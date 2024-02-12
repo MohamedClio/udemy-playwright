@@ -4,7 +4,9 @@
   "description": "automated software testing with playwright",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "test:e2e": "playwright test --config=e2e.config.ts --project=Safari"
   },
   "author": "Mohamed Clio",
   "license": "ISC",
