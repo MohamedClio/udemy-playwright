@@ -8,7 +8,7 @@ test.describe('searchbox test suite', () => {
     await page.keyboard.press('Enter')
 
     const numberOfLinks = await page.locator('li > a')
-    await expect(numberOfLinks).toHaveCount(2)
+    await expect(numberOfLinks).toHaveCount(9)
   })
 
   test('should display no results when searching for random character entry', async ({

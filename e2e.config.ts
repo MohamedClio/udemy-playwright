@@ -1,6 +1,7 @@
 import { PlaywrightTestConfig } from '@playwright/test'
 
 const config: PlaywrightTestConfig = {
+  globalSetup: './global-setup',
   timeout: 60000,
   retries: 0,
   testDir: 'tests/e2e',
@@ -10,6 +11,7 @@ const config: PlaywrightTestConfig = {
     ignoreHTTPSErrors: true,
     video: 'off',
     screenshot: 'off',
+    storageState: './loginAuth.json',
   },
   projects: [
     {
